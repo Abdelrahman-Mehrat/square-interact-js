@@ -1,0 +1,389 @@
+.template1_v1 {
+  position: relative;
+}
+
+.template1_v1 .question {
+  position: relative;
+}
+
+.template1_v1 .option {
+  cursor: pointer;
+  padding-top: 50px;
+}
+
+.template1_v1 .option.optDisable,
+.template1_v2 .option.optDisable {
+  cursor: default;
+}
+
+.template1_v1 .showAnswerTickMark,
+.template1_v1 .showAnswerCrossMark {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  /*display:none;*/
+}
+
+.template1_v1 .showAnswerCrossMark {
+  animation-name: crossBlinker;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+.template1_v1 .elm1 {
+  position: relative;
+  top: 50px;
+  left: 55px;
+  float: left;
+}
+
+.template1_v1 .elm2 {
+  position: relative;
+  top: 70px;
+  left: 140px;
+  float: left;
+}
+
+.template1_v1 .elm3 {
+  position: relative;
+  top: 70px;
+  left: 210px;
+  float: left;
+}
+
+.question {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 360px;
+  margin-right: 13px;
+}
+
+@keyframes crossBlinker {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.box1.title {
+  cursor: pointer;
+  /* margin-top: 25px; */
+}
+
+.template1_v2 .carousel-inner {
+  margin-top: 0;
+}
+
+.template1_v2 .option {
+  cursor: pointer;
+  border-radius: 25px;
+  /* padding: 7px; */
+  margin-left: 54px;
+  /* color: #fff; */
+  position: relative;
+  left: -16px;
+  border: 3px solid #00aaad;
+  padding: 15px 80px 15px 80px;
+}
+
+.numbersImage {
+  width: 2.93em;
+}
+
+.template1_v2 {
+  font-size: 30px;
+  height: 100%;
+}
+
+.marginRt5 {
+  margin-right: 5px;
+}
+
+.correctTick::after {
+  top: -64px;
+  left: 100px;
+  height: 52px;
+  width: 52px;
+}
+
+.incorrectTick::after {
+  top: -64px;
+  left: 100px;
+  height: 48px;
+  width: 50px;
+}
+
+#sen2 .correctTick::after {
+  left: 570px;
+}
+
+#sen2 .incorrectTick::after {
+  left: 695px;
+}
+
+#sen3 .correctTick::after {
+  left: 692px;
+}
+
+#sen3 .incorrectTick::after {
+  left: 570px;
+}
+
+#sen4 .correctTick::after {
+  left: 560px;
+}
+
+#sen4 .incorrectTick::after {
+  left: 685px;
+}
+
+.pageAudioIcon {
+  width: 61px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.nest1 {
+  position: absolute;
+  left: 125px;
+  top: 286px;
+  z-index: 22;
+}
+
+.nest2 {
+  position: absolute;
+  left: 718px;
+  top: 286px;
+  z-index: 22;
+}
+
+.opt {
+  position: absolute;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.opt1 {
+  top: 240px;
+  left: 820px;
+  transform: rotate(15deg);
+}
+
+.opt2 {
+  top: 208px;
+  left: 214px;
+}
+
+.opt3 {
+  top: 240px;
+  left: 186px;
+  transform: rotate(-30deg);
+}
+
+.opt4 {
+  top: 254px;
+  left: 207px;
+  transform: rotate(20deg);
+  z-index: 1;
+}
+
+.opt5 {
+  top: 240px;
+  left: 238px;
+  transform: rotate(20deg);
+}
+
+.opt:hover {
+  transform: scale(1.2);
+  animation-direction: alternate;
+  opacity: 1;
+}
+
+.moving {
+  pointer-events: none;
+}
+
+.opt1:hover {
+  animation: mymove 0.7s infinite ease-in-out;
+}
+
+.opt2:hover {
+  animation: mymove1 0.7s infinite ease-in-out;
+}
+
+.opt3:hover {
+  animation: mymove 0.7s infinite ease-in-out;
+}
+
+.opt4:hover {
+  animation: mymove2 0.7s infinite ease-in-out;
+}
+
+.opt5:hover {
+  animation: mymove 0.7s infinite ease-in-out;
+}
+
+@keyframes mymove {
+  from {
+    top: 240px;
+  }
+
+  to {
+    top: 250px;
+  }
+}
+
+@keyframes mymove1 {
+  from {
+    top: 208px;
+  }
+
+  to {
+    top: 218px;
+  }
+}
+
+@keyframes mymove2 {
+  from {
+    top: 254px;
+  }
+
+  to {
+    top: 264px;
+  }
+}
+
+.startActivity {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.triangleImg {
+  width: 15em;
+}
+
+.element img {
+  display: none;
+  /* position: absolute; */
+}
+
+#btn_rotate {
+  display: none;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+#btn_rotate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  background: #ccc;
+  padding: 30px;
+}
+
+.element {
+  /* display: none; */
+
+  overflow: hidden;
+  /* added later */
+  touch-action: none;
+  box-sizing: border-box;
+  position: absolute;
+}
+/* algamil */
+/* general classes */
+.fullSize {
+  width: 100%;
+  height: 100%;
+}
+/* container */
+.dragParent {
+  display: grid;
+  place-items: center;
+}
+/* form parent */
+.square {
+  border: 2px solid grey;
+  width: 600px;
+  display: flex;
+  height: 100px;
+  position: relative;
+}
+.select {
+  box-shadow: 1px 25px 72px -27px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 25px 72px -27px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 25px 72px -27px rgba(0, 0, 0, 0.75);
+  outline: rgb(18, 121, 195) solid 3px;
+}
+/* form */
+.square .form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-110%);
+  box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.527);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  max-width: 300px;
+}
+
+.square .form input {
+  width: 220px;
+  font-size: 30px;
+  outline: 2px solid #7e7e7e;
+}
+/* elements */
+.childd {
+  border-right: 2px solid grey;
+  height: 100%;
+}
+.childd:last-child {
+  border-right: 0;
+}
+/* colors */
+.color__container {
+  display: flex;
+  gap: 10px;
+}
+.color__btn {
+  width: 65px;
+  height: 65px;
+  display: block;
+  border-radius: 5px;
+}
+#form__btn {
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 0px 10px 10px 0px;
+}
+#resize-handle {
+  position: absolute;
+
+  left: 560px;
+  top: 23px;
+  width: 40px;
+  height: 40px;
+  background-color: #92e;
+  border: solid 4px #fff;
+  border-radius: 100%;
+  curosr: move;
+}
